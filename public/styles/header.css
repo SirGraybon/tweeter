@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  width: 100%;
+  background-color: #b68222;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+}
+
+header img {
+  padding: 140px 0 0 0;
+}
+
+header h2 {
+  margin: 0;
+}
