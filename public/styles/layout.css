@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -28,7 +31,37 @@ body main {
   align-items: center; */
   width: 90%;
   margin: auto
+}
 
+article {
+  border: solid;
+  border-radius: 25px;
+  margin: 5px 0 0 5px;
+  transition: 0.3s;
+  
+}
+
+article header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 2.5%;
+  padding: 10px;
+}
+
+article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid;
+  margin: 0 2.5%;
+  padding: 10px;
+
+
+}
+article div {
+  margin: 0 2.5%;
+  padding: 10px;
 }
 
 /*
