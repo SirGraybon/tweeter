@@ -18,7 +18,7 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #084c61;
   background-color: #d4c6af;
   font-size: 24px;
   font-family: source sans pro, sans-serif;
@@ -45,6 +45,7 @@ article header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 0 2.5%;
   padding: 10px;
 }
@@ -59,9 +60,20 @@ article footer {
 
 
 }
-article div {
+article div.content {
   margin: 0 2.5%;
   padding: 10px;
+}
+
+article div.user {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+article div.user a.name {
+padding: 0.5em;
+
 }
 
 

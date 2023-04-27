@@ -1,6 +1,6 @@
-$(document).ready(function() {
+// $(document).on("ready page:change", function() {
 
-  $(".feed").hover(function(event) {
+  $(".tweet").hover(function(event) {
     event.stopImmediatePropagation();
     $(this).css("box-shadow", "5px 5px 9px rgba(94,104,121, 1").css("margin", "0 5px 5px 0");
   }, function() {
@@ -13,4 +13,9 @@ $(document).ready(function() {
   }, function() { $(this).css("color", "#545149")
 });
 
-});
+// });
+
+
+
+/// use css psudo selector of hover
+///word wrap tweets

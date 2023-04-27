@@ -5,11 +5,11 @@
   align-items: center;
   height: 520px;
   width: 100%;
-  background-color: #b68222;
+  background-color: #fbb13c;
   background-image: url("https://www.transparenttextures.com/patterns/xv.png");
 }
 
-header img {
+img.user_avatar {
   padding: 140px 0 0 0;
 }
 
