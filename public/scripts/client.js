@@ -18,10 +18,17 @@ $(document).ready(function() {
 
     }
   };
+//creates safe string content
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   // accepts an object and returns an HTML tweet
   const createTweetElement = function(obj) {
     const { user, content, created_at } = obj;
+ 
 
     const newTweet = `<article class="tweet">
   <header>
@@ -31,7 +38,7 @@ $(document).ready(function() {
     </div>
     <a class="handle">${user.handle}</a>
   </header>
-  <div class="content">${content.text}</div>
+  <div class="content">${escape(content.text)}</div>
   <footer>
     <a class="timeago" >${timeago.format(created_at)}</a>
     <a class="actions">
