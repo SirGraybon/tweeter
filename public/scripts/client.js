@@ -63,10 +63,15 @@ $(document).ready(function() {
 
     const data = $(this).serialize();
     if (data.length - 5 === 0) {
-      window.alert("text feild blank");
+      $("#toast").text("You can't tweet about nothing :)")
+      $("#toast").toggleClass();
+      setTimeout(() => $("#toast").toggleClass(), 2000)
+      
 
     } else if (data.length - 5 > 140) {
-      window.alert("cant exceed 140 characters");
+      $("#toast").text("Cannot tweet more than 140 characters")
+      $("#toast").toggleClass();
+      setTimeout(() => $("#toast").toggleClass(), 2000)
     } else {
       
       $.ajax({
@@ -74,6 +79,7 @@ $(document).ready(function() {
         url: "/tweets",
         data: data,
       })
+      .then(() => $("#tweets-container").empty())
       .then(() => loadTweets())
       .then(() =>$(".new_tweet").trigger("reset"))
       
