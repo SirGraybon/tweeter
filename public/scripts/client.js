@@ -68,7 +68,8 @@ $(document).ready(function() {
         url: "/tweets",
         data: data,
       });
-
+      
+      loadTweets();
     }
 
   });
@@ -79,6 +80,7 @@ $(document).ready(function() {
       url: "/tweets",
       success: function(res) {
         renderTweet(res);
+        console.log(res)
       },
     });
     //.then(renderTweet(data))
