@@ -58,9 +58,9 @@ $(document).ready(function() {
   //Function call - starts the process
   // renderTweet(tweetData);
   //accepts submitted form data and sends it to server. also prevents page refresh
-  $("form").on("submit", function(event) {
+  $(".new_tweet").on("submit", function(event) {
     event.preventDefault();
-    
+
     const data = $(this).serialize();
     if (data.length - 5 === 0) {
       window.alert("text feild blank");
@@ -68,15 +68,17 @@ $(document).ready(function() {
     } else if (data.length - 5 > 140) {
       window.alert("cant exceed 140 characters");
     } else {
-
-
+      
       $.ajax({
         type: "POST",
         url: "/tweets",
         data: data,
-      });
+      })
+      .then(() => loadTweets())
+      .then(() =>$(".new_tweet").trigger("reset"))
       
-      loadTweets();
+      
+      
     }
 
   });

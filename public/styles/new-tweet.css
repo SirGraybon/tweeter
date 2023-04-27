@@ -1,9 +1,9 @@
-form {
+.new_tweet {
   width: 100%;
   margin: 1em 0;
 }
 
-form div {
+.new_tweet div {
 
   padding-top: 5px;
   display: flex;
@@ -14,7 +14,7 @@ form div {
 
 }
 
-form a {
+.new_tweet a {
   border-top: solid;
   padding-top: 5px;
 
@@ -25,7 +25,7 @@ form a {
 
 
 
-form textarea {
+.new_tweet textarea {
   height: 1.25em;
   background-color: transparent;
   border: none;
@@ -39,6 +39,6 @@ form textarea {
 
 }
 
-form button {
+.new_tweet button {
   background-color: #4056A1;
 }
