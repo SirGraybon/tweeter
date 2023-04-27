@@ -60,7 +60,7 @@ $(document).ready(function() {
   //accepts submitted form data and sends it to server. also prevents page refresh
   $("form").on("submit", function(event) {
     event.preventDefault();
-
+    
     const data = $(this).serialize();
     if (data.length - 5 === 0) {
       window.alert("text feild blank");

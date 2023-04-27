@@ -33,48 +33,6 @@ body main {
   margin: auto
 }
 
-article {
-  border: solid;
-  border-radius: 25px;
-  margin: 5px 0 0 5px;
-  transition: 0.3s;
-  
-}
-
-article header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2.5%;
-  padding: 10px;
-}
-
-article footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-top: solid;
-  margin: 0 2.5%;
-  padding: 10px;
-
-
-}
-article div.content {
-  margin: 0 2.5%;
-  padding: 10px;
-}
-
-article div.user {
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-}
-article div.user a.name {
-padding: 0.5em;
-
-}
 
 
 
