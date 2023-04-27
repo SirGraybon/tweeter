@@ -22,20 +22,22 @@ body {
   background-color: #d4c6af;
   font-size: 24px;
   font-family: source sans pro, sans-serif;
+  /* flex-direction: column; */
+
 }
 
-body main {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; */
+#features main {
+
   width: 90%;
-  margin: auto
+  margin: auto;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+ 
+
+
 }
 
 
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

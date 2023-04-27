@@ -3,14 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 520px;
-  width: 100%;
+
   background-color: #fbb13c;
   background-image: url("https://www.transparenttextures.com/patterns/xv.png");
 }
 
-img.user_avatar {
-  padding: 140px 0 0 0;
+.user_avatar {
+  padding: 100px 0 0 0;
 }
 
 header h2 {
