@@ -3,7 +3,6 @@
   border-radius: 25px;
   margin: 5px 0 0 5px;
   transition: 0.3s;
-  
 }
 
 .tweet header {
@@ -14,7 +13,6 @@
   margin: 0 2.5%;
   padding: 10px;
 }
-
 
 .tweet footer {
   display: flex;

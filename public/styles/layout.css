@@ -13,28 +13,18 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #084c61;
   background-color: #d4c6af;
   font-size: 24px;
   font-family: source sans pro, sans-serif;
-
-
 }
 
 #features main {
-
   width: 90%;
   margin: auto;
 }
 
-#features {
-  /* display: flex;
-  flex-direction: column; */
- 
+b {
+  font-weight: 300;
 }
-
