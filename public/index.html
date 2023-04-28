@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
   <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/scrollTopButton.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/animation.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -45,7 +47,7 @@
       <a>
         Write a new tweet
       </a>
-      <i class="fa-solid fa-kiwi-bird"></i>
+      <i id="animated" class="fa-solid fa-kiwi-bird"></i>
     </div>
   </nav>
   <div id="features">
@@ -85,7 +87,7 @@
       </section>
 
 
-
+      <button id="scrollTop"></button>
     </main>
   </div>
 </body>
