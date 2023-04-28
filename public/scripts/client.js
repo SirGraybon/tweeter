@@ -66,13 +66,13 @@ $(document).ready(function() {
 
     const data = $(this).serialize();
     if (data.length - 5 === 0) {
-      $("#toast").text("You can't tweet about nothing :)");
+      $("#toast").text("You can't tweet about nothing 🐤 (Tweet cannot be empty) ");
       $("#toast").toggleClass();
-      setTimeout(() => $("#toast").toggleClass(), 2000);
+      setTimeout(() => $("#toast").toggleClass(), 3000);
 
 
     } else if (data.length - 5 > 140) {
-      $("#toast").text("Cannot tweet more than 140 characters");
+      $("#toast").text("Cannot tweet more than 140 characters 🐤");
       $("#toast").toggleClass();
       setTimeout(() => $("#toast").toggleClass(), 2000);
     } else {
