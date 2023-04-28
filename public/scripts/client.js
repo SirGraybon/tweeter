@@ -12,7 +12,7 @@ $(document).ready(function() {
       url: "/tweets",
       success: function(res) {
         renderTweet(res);
-        console.log(res);
+  ;
       },
     });
   };
