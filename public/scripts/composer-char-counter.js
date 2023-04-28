@@ -1,10 +1,6 @@
-
 $(document).ready(function() {
-  // use jquery to grab the 140 max char
-  // use jquery to grab length of what is being typoed in input 
-  // subtract length of what is typed from the 140
-
-
+ 
+  // fuciton to manipulate the character counter on tweet form
   $("#tweet-text").on("input", function() {
     const maxChar = 140;
 
