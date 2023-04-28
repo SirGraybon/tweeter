@@ -1,6 +1,7 @@
 .new_tweet {
   width: 100%;
   margin: 1em 0;
+
 }
 
 .new_tweet div {
@@ -8,7 +9,8 @@
   padding-top: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+
+  align-items: center;
   padding-bottom: 5px;
   font-weight: 600;
 
@@ -25,12 +27,13 @@
 
 
 
-.new_tweet textarea {
-  height: 1.25em;
+#tweet-text {
+ height: 1.25em;
   background-color: transparent;
   border: none;
   flex: 1;
   outline: none;
+  resize: none;
   width: 100%;
   margin: 0 0 0 1em;
   padding-bottom: 5px;
@@ -38,6 +41,12 @@
   word-wrap: soft;
 
 }
+
+
+.new_tweet textarea::-webkit-scrollbar{
+  display: none
+}
+
 
 .new_tweet button {
   background-color: #4056A1;

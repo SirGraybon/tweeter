@@ -1,23 +1,28 @@
 @media only screen and (min-width: 1024px) {
 
   #features {
+    display: flex;
     flex-direction: row;
     height: 100vh;
-    padding: 120px 0 0 0;
+    padding: 120px 0 0 0
+    
 
   }
 
   #features>#pageHead {
-    margin: 1em;
-    width: 30em;
  
+    width: 30em;
+    margin: 1em;
     border-radius: 50px;
   }
 
   #features > main {
     margin: 1em;
     overflow-y: scroll;
-
+ 
+  }
+  #features > main::-webkit-scrollbar {
+    display: none;
   }
 
   nav {

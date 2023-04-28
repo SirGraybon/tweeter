@@ -82,6 +82,8 @@ $(document).ready(function() {
       .then(() => $("#tweets-container").empty())
       .then(() => loadTweets())
       .then(() =>$(".new_tweet").trigger("reset"))
+      .then(() =>$(".counter").text("140"))
+      .then(() =>$("#tweet-text").css("height", "1.25em"))
       
       
       
@@ -106,6 +108,15 @@ $(document).ready(function() {
 
 
   loadTweets();
+
+
+  $(".dropper").on("click", function() {
+    $(".constainer").css("margin", "0 0 120px 0")
+  } )
+
+  $("#tweet-text").on("keydown", function() {
+    $("#tweet-text").css("height", `${$("#tweet-text").prop("scrollHeight")}px`)
+  })
 
 
 })

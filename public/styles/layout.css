@@ -22,7 +22,7 @@ body {
   background-color: #d4c6af;
   font-size: 24px;
   font-family: source sans pro, sans-serif;
-  /* flex-direction: column; */
+
 
 }
 
@@ -33,11 +33,8 @@ body {
 }
 
 #features {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
  
-
-
 }
-
 

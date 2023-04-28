@@ -15,8 +15,9 @@ $(document).ready(function() {
       $(".counter").css("color", "#b31d06");
       
     } else {
-      $(".counter").css("color", "#545149");
+      $(".counter").css("color", "#084c61");
     }
+
   });
 });
 
