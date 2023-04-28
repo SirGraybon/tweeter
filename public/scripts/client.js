@@ -12,6 +12,7 @@ $(document).ready(function() {
 
   // first function called - loops through passed in array and calls createTweetElement function on each object in array. finally it appends the return tweet to the html
   const renderTweet = function(tweets) {
+    $("#tweets-container").empty()
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').prepend($tweet);
@@ -79,7 +80,7 @@ $(document).ready(function() {
         url: "/tweets",
         data: data,
       })
-      .then(() => $("#tweets-container").empty())
+      // .then(() => $("#tweets-container").empty())
       .then(() => loadTweets())
       .then(() =>$(".new_tweet").trigger("reset"))
       .then(() =>$(".counter").text("140"))
@@ -96,6 +97,7 @@ $(document).ready(function() {
       type: "GET",
       url: "/tweets",
       success: function(res) {
+
         renderTweet(res);
         console.log(res)
       },
@@ -111,8 +113,17 @@ $(document).ready(function() {
 
 
   $(".dropper").on("click", function() {
-    $(".constainer").css("margin", "0 0 120px 0")
+   if($(".new_tweet").css("display") === "none"){
+     $(".new_tweet").slideDown()
+     $("#tweet-text").focus()
+    } else {
+      $(".new_tweet").slideUp()
+
+    }
   } )
+
+
+
 
   $("#tweet-text").on("keydown", function() {
     $("#tweet-text").css("height", `${$("#tweet-text").prop("scrollHeight")}px`)
