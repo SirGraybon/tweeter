@@ -10,18 +10,19 @@
   }
 
   #features>#pageHead {
- 
+
     width: 30em;
     margin: 1em;
     border-radius: 50px;
   }
 
-  #features > main {
+  #features>main {
     margin: 1em;
     overflow-y: scroll;
- 
+
   }
-  #features > main::-webkit-scrollbar {
+
+  #features>main::-webkit-scrollbar {
     display: none;
   }
 
@@ -29,10 +30,11 @@
 
     background-color: #084c61;
   }
+
   .user_avatar {
     padding: 0 0 0 0;
   }
-  
+
 
 
 }

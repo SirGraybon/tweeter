@@ -10,12 +10,12 @@ nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  font-size: 28pt;  
+  font-size: 28pt;
 }
 
 nav span {
   font-family: bungee, sans-serif;
-  
+
 }
 
 nav div {

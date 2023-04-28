@@ -1,7 +1,7 @@
 // helper functions
 
 $(document).ready(function() {
-  
+
   // function to show / hide tweet form
   $(".dropper").on("click", function() {
     if ($(".new_tweet").css("display") === "none") {
@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
 
- 
+
 
 
 

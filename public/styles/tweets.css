@@ -23,6 +23,7 @@
   padding: 10px;
 
 }
+
 .tweet div.content {
   margin: 0 2.5%;
   padding: 10px;
@@ -31,20 +32,22 @@
 }
 
 .tweet div.user {
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
+
 .tweet div.user a.name {
-padding: 0.5em;
+  padding: 0.5em;
 
 }
 
 .tweet:hover {
-  box-shadow: 5px 5px 9px rgba(94,104,121, 1);
+  box-shadow: 5px 5px 9px rgba(94, 104, 121, 1);
   margin: 0 2px 2px 0
 }
+
 .tweet i:hover {
   color: #ae8a44
 }
