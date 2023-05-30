@@ -26,4 +26,4 @@ Tweeter is a simple, single-page Twitter clone built using JQuery, AJAX, HTML an
 ## planned updates
 
 - Add button to scroll page back to top
-- SASS file structure
+- SASS styling
